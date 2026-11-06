@@ -645,9 +645,9 @@ async def add_coinssw(app, query):
       await ask2.reply(str(error), reply_markup=ADMIN_BACK)
       return
     try:
-      success, result = await _adjust_user_points(t_id, amount, True)
-        except Exception as error:
-      logger.error("Admin balance update failed (%s)", type(error).__name__)
+        success, result = await _adjust_user_points(t_id, amount, True)
+    except Exception as error:
+        logger.error("Admin balance update failed (%s)", type(error).__name__)
       await ask2.reply(
           "تعذر تحديث الرصيد حالياً. لم يتم تأكيد العملية.",
           reply_markup=ADMIN_BACK,
