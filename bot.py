@@ -86,10 +86,10 @@ if not db.get("admin_list") and not BOOTSTRAP_ADMIN_IDS:
 
 bot = Client(
     name="RashqZe",
-    api_id=APP_ID,
+    api_id=API_ID,       # تم تصحيحها من APP_ID إلى API_ID
     api_hash=API_HASH,
     bot_token=TG_BOT_TOKEN,
-    workers=20,
+    workers=10,
     parse_mode=ParseMode.DEFAULT,
 )
 
