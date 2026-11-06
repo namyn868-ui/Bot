@@ -46,15 +46,6 @@ DATABASE_PATH = os.getenv("DATABASE_PATH", "data.sqlite")
 
 if not TG_BOT_TOKEN:
     raise RuntimeError("Set TG_BOT_TOKEN in the environment before starting the bot.")
-if not API_HASH:
-    raise RuntimeError("Set API_HASH in the environment before starting the bot.")
-if not DB_PASSWORD:
-    raise RuntimeError(
-        "Set DB_PASSWORD in the environment. Use the existing database password "
-        "to keep access to the current data, or choose one for a new database."
-    )
-
-
 def configured_admin_ids():
     """Read the initial administrators from ADMIN_IDS."""
     result = []
