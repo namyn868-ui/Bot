@@ -39,11 +39,10 @@ from pyrogram.types import InlineKeyboardMarkup as Keyboard
 
 load_dotenv()
 
-TG_BOT_TOKEN = os.environ.get("8918257481:AAHd3VjfpGeb-M7oFRCRYWQHM8-d6Bh2uik", "").strip()
-API_HASH = os.environ.get("API_HASH", "").strip()
-DB_PASSWORD = os.environ.get("DB_PASSWORD")
-APP_ID = int(os.environ.get("APP_ID", "21627756"))
-DATABASE_PATH = os.environ.get("DATABASE_PATH", "data.sqlite")
+TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip()
+API_ID = int(os.getenv("API_ID", "21627756"))
+API_HASH = os.getenv("API_HASH", "").strip()
+DATABASE_PATH = os.getenv("DATABASE_PATH", "data.sqlite")
 
 if not TG_BOT_TOKEN:
     raise RuntimeError("Set TG_BOT_TOKEN in the environment before starting the bot.")
