@@ -69,7 +69,7 @@ def configured_admin_ids():
 
 
 BOOTSTRAP_ADMIN_IDS = configured_admin_ids()
-db = KVClient(DATABASE_PATH, DB_PASSWORD)
+db = KVClient(DATABASE_PATH)
 
 DEFAULTS = {
     "ban_list": [],
