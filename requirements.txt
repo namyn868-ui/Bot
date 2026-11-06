@@ -1,0 +1,5 @@
+pyrogram
+pyromod
+kvsqlite
+requests
+python-dotenv
