@@ -1,1 +1,1 @@
-worker: python Nabil.py
+worker: python "Nabil (1).py"
