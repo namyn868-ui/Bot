@@ -1,5 +1,4 @@
-pyrogram
-pyromod
-kvsqlite
-requests
-python-dotenv
+python-telegram-bot
+psycopg2-binary
+cryptography
+httpx
